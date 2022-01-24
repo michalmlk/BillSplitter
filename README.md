@@ -6,7 +6,7 @@ a tip.
 
 Look below how it's looking :) 
 
-
+![billsplitter](https://user-images.githubusercontent.com/60189836/150785411-f5250334-e4f8-449c-be87-ed5ac1ff8560.jpg)
 
 
 
