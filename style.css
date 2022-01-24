@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(219, 219, 219);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.wrapper{
+    width: 360px;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 5px 15px rgba(0,0,0,.2);
+    background-color: #fff;
+    border-radius: 5px;
+}
+.top{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(30, 184, 255);
+    border-radius: 5px 5px 0 0 ;
+    height: 50%;
+    flex-grow: 1;
+    overflow: hidden;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0,0,0,.3);
+}
+.top p{
+    margin-top: 8px;
+    font-size: 12px;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+    padding: 5%;
+}
+label{
+    display: block;
+    margin-bottom: 0;
+    font-size: 12px;
+    color: rgb(124, 124, 124);
+    text-transform: lowercase;
+}
+.count{
+    width: 30%;
+    align-self: center;
+    margin: 5%;
+    background-color: #fff;
+    border-radius: 5px;
+    height:25px;
+    color: rgb(100, 100, 100);
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.2);
+    transition: background-color .2s;
+}
+.count:hover{
+    background-color: rgb(83, 246, 124);
+}
+input, select{
+    height: 25px;
+    padding-left: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color .3s;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.1);
+}
+input:focus,
+select:focus{
+    outline: 1px solid rgba(83, 246, 124,.2);
+    background-color: rgba(83,246,124,.2);
+}
+.count-info,
+.price,
+.error{
+    display: none;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(218, 109, 109)
+}
+.error{
+    display: none;
+}
+.price{
+    font-weight: bold;
+}

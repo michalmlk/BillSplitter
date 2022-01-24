@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BillSplitter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <h1>BillSplitter</h1>
+            <p>Divine the bill into your friends!</p>
+        </div>
+
+        <div class="bottom">
+            <label for="price">Value</label>
+            <input type="number" id="price" min="0">
+            <label for="people">Num of people:</label>
+            <input type="number" id="people" min="0">
+
+            <label for="tip">Tip</label>
+            <select id="tip">
+                <option value="0" disabled selected>choose tip</option>
+                <option value="0.05">5%</option>
+                <option value="0.1">10%</option>
+                <option value="0.15">15%</option>
+                <option value="0.25">25%</option>
+            </select>
+            <button class="count">Action!</button>
+            <p class="error">that's not everything 😐</p>
+            <p class="count-info">Your charge is <span class="price"></span>
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
